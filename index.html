@@ -13,11 +13,15 @@
       <p id="funcionamento">
         Clique duas vezes em um item para marcá-lo como completo
       </p>
-      <input type="text" id="texto-tarefa" />
+      <div class="container">
+        <input type="text" id="texto-tarefa" />
+        <button class="botao" id="criar-tarefa">Adicionar</button>
+      </div>
       <ol id="lista-tarefas"></ol>
-      <button id="criar-tarefa">Adicionar</button>
-      <button id="apaga-tudo">Limpar lista</button>
-      <button id="remover-finalizados">Limpar tarefas finalizadas</button>
+      <button class="botao" id="apaga-tudo">Limpar lista</button>
+      <button class="botao" id="remover-finalizados">
+        Limpar tarefas finalizadas
+      </button>
     </section>
     <script src="script.js"></script>
   </body>

@@ -1,14 +1,14 @@
 const listaOrdenada = document.getElementById('lista-tarefas');
 const botaoAdiciona = document.getElementById('criar-tarefa');
-const listaLi = document.getElementsByTagName('li');
+//const listaLi = document.getElementsByTagName('li');
 const input = document.getElementById('texto-tarefa');
-let selected = document.getElementsByClassName('selected');
+const selected = document.getElementsByClassName('selected');
 const botaoLimpar = document.getElementById('apaga-tudo');
 const botaoRemover = document.getElementById('remover-finalizados');
-let completed = document.getElementsByClassName('completed');
+//let completed = document.getElementsByClassName('completed');
 
 botaoAdiciona.addEventListener('click', function () {
-  let li = document.createElement('li');
+  const li = document.createElement('li');
   li.innerText = input.value;
   listaOrdenada.appendChild(li);
   input.value = '';
@@ -34,7 +34,7 @@ botaoLimpar.addEventListener('click', function () {
 });
 
 botaoRemover.addEventListener('click', function () {
-  let completed = document.getElementsByClassName('completed');
+  const completed = document.getElementsByClassName('completed');
   while (completed.length > 0) {
     completed[0].parentNode.removeChild(completed[0]);
   }
