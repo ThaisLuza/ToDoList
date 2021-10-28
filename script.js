@@ -1,11 +1,9 @@
 const listaOrdenada = document.getElementById('lista-tarefas');
 const botaoAdiciona = document.getElementById('criar-tarefa');
-//const listaLi = document.getElementsByTagName('li');
 const input = document.getElementById('texto-tarefa');
 const selected = document.getElementsByClassName('selected');
 const botaoLimpar = document.getElementById('apaga-tudo');
 const botaoRemover = document.getElementById('remover-finalizados');
-//let completed = document.getElementsByClassName('completed');
 
 botaoAdiciona.addEventListener('click', function () {
   const li = document.createElement('li');
