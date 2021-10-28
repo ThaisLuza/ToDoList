@@ -5,35 +5,45 @@ const selected = document.getElementsByClassName('selected');
 const botaoLimpar = document.getElementById('apaga-tudo');
 const botaoRemover = document.getElementById('remover-finalizados');
 
-botaoAdiciona.addEventListener('click', function () {
+function criaTarefa() {
   const li = document.createElement('li');
   li.innerText = input.value;
   listaOrdenada.appendChild(li);
   input.value = '';
-});
+}
 
-listaOrdenada.addEventListener('click', function (event) {
+botaoAdiciona.addEventListener('click', criaTarefa);
+
+function alteraCor(event) {
   if (selected[0]) {
     selected[0].classList.remove('selected');
   }
   event.target.classList.add('selected');
-});
+}
 
-listaOrdenada.addEventListener('dblclick', function (event) {
+listaOrdenada.addEventListener('click', alteraCor);
+
+function riscar(event) {
   if (event.target.classList.contains('completed')) {
     event.target.classList.remove('completed');
   } else {
     event.target.classList.add('completed');
   }
-});
+}
 
-botaoLimpar.addEventListener('click', function () {
+listaOrdenada.addEventListener('dblclick', riscar);
+
+function limparLista() {
   listaOrdenada.innerText = '';
-});
+}
 
-botaoRemover.addEventListener('click', function () {
+botaoLimpar.addEventListener('click', limparLista);
+
+function limparFinalizados() {
   const completed = document.getElementsByClassName('completed');
   while (completed.length > 0) {
     completed[0].parentNode.removeChild(completed[0]);
   }
-});
+}
+
+botaoRemover.addEventListener('click', limparFinalizados);

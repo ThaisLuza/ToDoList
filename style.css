@@ -3,18 +3,18 @@
 }
 
 .completed {
-  text-decoration: line-through solid rgb(0, 0, 0);
+  text-decoration: line-through solid rgb(0 , 0 , 0);
 }
 
 section {
   border: solid 1px black;
   border-radius: 10px;
   padding: 15px 30px;
-  background-color: rgb(238, 214, 196);
+  background-color: rgb(238 , 214 , 196);
 }
 
 body {
-  background-color: rgb(107, 79, 79);
+  background-color: rgb(107 , 79 , 79);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -28,19 +28,19 @@ header {
   padding: 15px 30px;
   margin-bottom: 20px;
   cursor: pointer;
-  background-color: rgb(72, 52, 52);
+  background-color: rgb(72 , 52 , 52);
   color: white;
   font-size: 100%;
   transition: background-color 0.3s;
 }
 .botao:hover {
-  background-color: rgb(107, 79, 79);
+  background-color: rgb(107 , 79 , 79);
 }
 
 #texto-tarefa {
-  border: 2px solid rgb(66, 66, 66);
+  border: 2px solid rgb(66 , 66 , 66);
   border-radius: 50px;
-  color: rgb(66, 66, 66);
+  color: rgb(66 , 66 , 66);
   cursor: pointer;
   padding: 6px 16px;
 }
