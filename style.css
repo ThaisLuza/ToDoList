@@ -3,7 +3,7 @@
 }
 
 .completed {
-  text-decoration: line-through solid rgb(0 , 0 , 0);
+  text-decoration: line-through solid black;
 }
 
 section {
@@ -15,7 +15,7 @@ section {
 
 body {
   background-color: rgb(107 , 79 , 79);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, sans-serif;
 }
 
 header {
@@ -33,6 +33,7 @@ header {
   font-size: 100%;
   transition: background-color 0.3s;
 }
+
 .botao:hover {
   background-color: rgb(107 , 79 , 79);
 }
